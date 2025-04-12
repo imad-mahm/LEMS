@@ -4,9 +4,6 @@
 
 body {
   font-family: "Arial", sans-serif;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   height: 100vh;
   margin: 0;
 }
@@ -29,13 +26,11 @@ header {
   width: 100%;
 }
 header nav img {
-  height: 60px;
-  margin: 0 10px;
+  height: 70px;
 }
 
 main {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
@@ -90,6 +85,31 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#topOfEvents {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 80vw;
+  height: 10vh;
+  background-color: #00614b;
+}
+
+#topOfEvents svg {
+  position: absolute;
+  right: 20px;
+  width: fit-content;
+  height: 50%;
+}
+
+#topOfEvents h2 {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+  position: absolute;
+  left: 20px;
 }
 
 footer {
