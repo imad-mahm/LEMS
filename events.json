@@ -1,0 +1,105 @@
+[
+    {
+        "event": "Semicolon Hackathon",
+        "date": "2025-4-18",
+        "location": "AKSOB 903",
+        "organizing_club": "Computer Science Club"
+    },
+    {
+        "event": "Robotics Workshop",
+        "date": "2025-4-20",
+        "location": "GB Lab",
+        "organizing_club": "Robotics Club"
+    },
+    {
+        "event": "Spring Beats Music Festival",
+        "date": "2023-4-28",
+        "location": "SFA Garden",
+        "organizing_club": "Music Club"
+    },
+    {
+        "event": "AI and Machine Learning Symposium",
+        "date": "2023-5-15",
+        "location": "Nicol 405",
+        "organizing_club": "Computer Science Club"
+    },
+    {
+        "event": "Annual Sports Day",
+        "date": "2023-5-20",
+        "location": "Gymnasium",
+        "organizing_club": "Sports Club"
+    },
+    {
+        "event": "Art and Culture Fest",
+        "date": "2023-6-10",
+        "location": "SFA Auditorium",
+        "organizing_club": "Art Club"
+    },
+    {
+        "event": "Tech Talk: Innovations in AI",
+        "date": "2023-6-15",
+        "location": "Nicol 405",
+        "organizing_club": "Computer Science Club"
+    },
+    {
+        "event": "Annual Alumni Meet",
+        "date": "2023-6-20",
+        "location": "SFA Garden",
+        "organizing_club": "Alumni Association"
+    },
+    {
+        "event": "Summer Coding Bootcamp",
+        "date": "2023-7-1",
+        "location": "AKSOB 903",
+        "organizing_club": "Computer Science Club"
+    },
+    {
+        "event": "Photography Workshop",
+        "date": "2023-7-10",
+        "location": "SFA Garden",
+        "organizing_club": "Photography Club"
+    },
+    {
+        "event": "Annual Science Fair",
+        "date": "2023-7-15",
+        "location": "SFA Auditorium",
+        "organizing_club": "Science Club"
+    
+    },
+    {
+        "event": "Summer Music Jam",
+        "date": "2023-7-20",
+        "location": "SFA Garden",
+        "organizing_club": "Music Club"
+    },
+    {
+        "event": "Hackathon: Code for Good",
+        "date": "2023-8-5",
+        "location": "AKSOB 903",
+        "organizing_club": "Computer Science Club"
+    },
+    {
+        "event": "Annual Debate Competition",
+        "date": "2023-8-10",
+        "location": "Nicol 405",
+        "organizing_club": "Debate Club"
+    },
+    {
+        "event": "Cultural Exchange Program",
+        "date": "2023-8-15",
+        "location": "SFA Auditorium",
+        "organizing_club": "Cultural Club"
+    },
+    {
+        "event": "Fall Fest",
+        "date": "2023-9-1",
+        "location": "SFA Garden",
+        "organizing_club": "Student Council"
+    },
+    {
+        "event": "Tech Expo 2023",
+        "date": "2023-9-10",
+        "location": "Nicol 405",
+        "organizing_club": "Computer Science Club"
+    }
+]
