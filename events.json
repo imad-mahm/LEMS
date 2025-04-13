@@ -4,7 +4,7 @@
       "date": "Tuesday, June 10, 2025",
       "time": "09:00",
       "location": "University Main Gate (Meeting Point)",
-      "category": "Environmental Science",
+      "tags": "Environmental Science",
       "spots_filled": 15,
       "spots_total": 20
     },
@@ -13,7 +13,7 @@
       "date": "Wednesday, April 30, 2025",
       "time": "14:00",
       "location": "Engineering Building - Lab 2",
-      "category": "Engineering",
+      "tags": "Engineering",
       "spots_filled": 12,
       "spots_total": 20
     },
@@ -22,7 +22,7 @@
       "date": "Monday, May 5, 2025",
       "time": "11:00",
       "location": "Business Auditorium",
-      "category": "Career Development",
+      "tags": "Career Development",
       "spots_filled": 25,
       "spots_total": 30
     },
@@ -31,7 +31,7 @@
       "date": "Friday, May 16, 2025",
       "time": "16:00",
       "location": "Main Campus Hall",
-      "category": "Artificial Intelligence",
+      "tags": "Artificial Intelligence",
       "spots_filled": 18,
       "spots_total": 25
     },
@@ -40,7 +40,7 @@
       "date": "Saturday, June 1, 2025",
       "time": "10:00",
       "location": "Art Studio - Room 5",
-      "category": "Arts & Media",
+      "tags": "Arts & Media",
       "spots_filled": 10,
       "spots_total": 15
     },
@@ -49,7 +49,7 @@
       "date": "Friday, May 23, 2025",
       "time": "09:00",
       "location": "Innovation Hub",
-      "category": "Tech & Innovation",
+      "tags": "Tech & Innovation",
       "spots_filled": 40,
       "spots_total": 50
     },
@@ -58,7 +58,7 @@
       "date": "Thursday, May 29, 2025",
       "time": "13:00",
       "location": "Room B101",
-      "category": "Business",
+      "tags": "Business",
       "spots_filled": 16,
       "spots_total": 20
     },
@@ -67,7 +67,7 @@
       "date": "Tuesday, June 3, 2025",
       "time": "15:00",
       "location": "Green Hall",
-      "category": "Sustainability",
+      "tags": "Sustainability",
       "spots_filled": 8,
       "spots_total": 25
     },
@@ -76,7 +76,7 @@
       "date": "Monday, May 19, 2025",
       "time": "10:00",
       "location": "CompSci Lab 3",
-      "category": "Programming",
+      "tags": "Programming",
       "spots_filled": 20,
       "spots_total": 20
     },
@@ -85,7 +85,7 @@
       "date": "Friday, June 7, 2025",
       "time": "17:30",
       "location": "Music Room A",
-      "category": "Performing Arts",
+      "tags": "Performing Arts",
       "spots_filled": 7,
       "spots_total": 15
     }
