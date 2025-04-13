@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Profile | LEMS</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="LEMS Logo" />
+        <span>LEMS</span>
+      </div>
+      <nav class="nav-links">
+        <a href="browse.html">Browse Events</a>
+        <a href="#">Recommended</a>
+        <div class="profile-dropdown">
+          <img
+            src="https://img.icons8.com/ios-filled/24/ffffff/user.png"
+            alt="User"
+            class="profile-icon"
+            onclick="toggleDropdown()"
+          />
+          <div id="dropdown-menu" class="dropdown-menu">
+            <a href="profile.html" class="dropdown-item profile-link"
+              >Profile</a
+            >
+            <a
+              href="index.html"
+              class="dropdown-item logout-link"
+              style="color: red"
+              >Log Out</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Your Profile</h1>
+      <p>Manage your account and preferences</p>
+
+      <div class="main-grid">
+        <section class="left-panel">
+          <div class="card">
+            <h2>Account Information</h2>
+            <div class="account-header">
+              <div class="avatar">IM</div>
+              <div class="info">
+                <p class="name">Imad Mahmoud</p>
+                <p class="email">imad.mahmoud@lau.edu</p>
+                <span class="role">STUDENT</span>
+              </div>
+            </div>
+            <form class="account-form">
+              <label>Full Name</label>
+              <input type="text" value="Imad Mahmoud" readonly />
+              <label>Email Address</label>
+              <input type="email" value="imad.mahmoud@lau.edu" readonly />
+
+              <div class="form-actions">
+                <a href="manage.html" class="btn-outline">Manage Events</a>
+                <button class="btn-danger">Sign Out</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="card">
+            <h2>Academic Profile</h2>
+            <p>
+              Upload and manage your transcript for personalized recommendations
+            </p>
+            <label>Upload Your Transcript</label>
+            <textarea
+              rows="6"
+              placeholder='{ "courses": [{ "code": "CS101", "name": "Introduction to Computer Science", "grade": "A" }] }'
+            ></textarea>
+
+            <div class="form-actions">
+              <button class="btn-success">Upload Transcript</button>
+            </div>
+          </div>
+        </section>
+
+        <aside class="right-panel">
+          <div class="card">
+            <h3>Notification Settings</h3>
+            <p>
+              Notification preferences are not available in the demo version.
+            </p>
+            <button class="btn-outline">Manage Notifications</button>
+          </div>
+          <div class="card">
+            <h3>Privacy Settings</h3>
+            <p>Privacy settings are not available in the demo version.</p>
+            <button class="btn-outline">Manage Privacy</button>
+          </div>
+          <div class="card">
+            <h3>Account Statistics</h3>
+            <p><strong>Academic profile status</strong>: Incomplete</p>
+            <p>Total Events: <strong>0</strong></p>
+            <p>Reviews: <strong>0</strong></p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 LEMS. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleDropdown() {
+        const menu = document.getElementById("dropdown-menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+
+      window.onclick = function (e) {
+        if (!e.target.matches(".profile-icon")) {
+          const menu = document.getElementById("dropdown-menu");
+          if (menu && menu.style.display === "block") {
+            menu.style.display = "none";
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
