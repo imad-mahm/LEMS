@@ -13,7 +13,6 @@
         menu.style.display = menu.style.display === "block" ? "none" : "block";
       }
 
-      // Optional: close dropdown if clicked outside
       window.onclick = function (e) {
         if (!e.target.matches(".profile-icon")) {
           const menu = document.getElementById("dropdown-menu");
@@ -30,7 +29,7 @@
       </a>
       <nav class="nav-links">
         <a href="browse.html">Browse Events</a>
-        <a href="#">Recommended</a>
+        <a href="Recommended.html">Recommended</a>
 
         <div class="profile-dropdown">
           <img
@@ -62,7 +61,7 @@
       </p>
       <div class="hero-buttons">
         <a href="browse.html" class="btn primary">Browse Events</a>
-        <a href="#" class="btn secondary">Recommended Events</a>
+        <a href="Recommended.html" class="btn secondary">Recommended Events</a>
       </div>
     </section>
 

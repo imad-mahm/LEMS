@@ -1,20 +1,9 @@
-/* General reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", sans-serif;
-}
-
 body {
-  background: #f9fbfa;
-  color: #0b5d45;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #065f46;
 }
-
-h2 {
-  padding: 0 10px 0 0;
-}
-
 .navbar {
   position: sticky;
   top: 0;
@@ -59,10 +48,64 @@ h2 {
   color: #065f46;
   font-size: 2rem;
 }
+
+.active-tab {
+  background-color: #e6f4f1;
+  border-radius: 6px;
+}
+
+.profile-circle {
+  background-color: #065f46;
+  color: white;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.subtext {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.custom-file {
+  margin-top: 1rem;
+}
+
+input[type="file"] {
+  display: none;
+}
+
 .profile-dropdown {
   position: relative;
-  display: inline-block;
-  margin-left: 2rem;
 }
 
 .profile-icon {
@@ -90,14 +133,11 @@ h2 {
 
 .dropdown-item {
   display: block;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-weight: 500;
+  padding: 10px 16px;
   font-size: 14px;
-  transition: background-color 0.3s;
-  width: 100%;
-  list-style: none;
-  box-sizing: border-box;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
 .profile-link {
@@ -110,86 +150,54 @@ h2 {
 
 .dropdown-item:hover {
   background-color: #f3f4f6;
+}
+.file-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 350px;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  color: #065f46;
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  border-radius: 0 0 8px 8px;
+  transition: border 0.2s ease;
 }
 
-.events-section {
-  background: white;
-  padding: 2rem;
-  margin: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+.file-box:hover {
+  border-color: #065f46;
 }
 
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+.file-icon {
+  width: 20px;
+  height: 20px;
 }
 
-.section-header h2 {
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.search-tools {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex: 1 1 auto;
-}
-
-.search-tools input {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  display: flex;
-  flex: 1 1 auto;
-}
-
-.filter-btn {
-  background: #e3f2ef;
-  color: #0b5d45;
+.btn-success {
+  background-color: #065f46;
+  color: white;
   border: none;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 500;
+  margin-top: 1rem;
   cursor: pointer;
 }
 
-.events-list {
-  margin-top: 2rem;
-  padding: 2rem;
-  border-radius: 8px;
+.btn-success:hover {
+  background-color: #047857;
+}
+
+.footer {
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-.event-image {
-  height: 50px;
-  width: 100px;
-}
-
-.events-list.empty {
-  background: #e6f0ec;
-  color: #0b5d45;
-}
-
-.events-list.empty p {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.event-item {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
+  padding: 2rem;
+  background-color: #f3f4f6;
+  color: #6b7280;
+  font-size: 14px;
 }
 
 .event-card {
@@ -207,7 +215,7 @@ h2 {
 .event-image {
   position: relative;
   height: 200px;
-  width: 100%;
+  overflow: hidden;
 }
 
 .event-image img {
@@ -294,4 +302,8 @@ h2 {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+#recommendations {
+  width: 100%;
 }

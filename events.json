@@ -1,105 +1,92 @@
 [
     {
-        "event": "Semicolon Hackathon",
-        "date": "2025-4-18",
-        "location": "AKSOB 903",
-        "organizing_club": "Computer Science Club"
+      "event": "Environmental Science Field Trip",
+      "date": "Tuesday, June 10, 2025",
+      "time": "09:00",
+      "location": "University Main Gate (Meeting Point)",
+      "category": "Environmental Science",
+      "spots_filled": 15,
+      "spots_total": 20
     },
     {
-        "event": "Robotics Workshop",
-        "date": "2025-4-20",
-        "location": "GB Lab",
-        "organizing_club": "Robotics Club"
+      "event": "Intro to Robotics Workshop",
+      "date": "Wednesday, April 30, 2025",
+      "time": "14:00",
+      "location": "Engineering Building - Lab 2",
+      "category": "Engineering",
+      "spots_filled": 12,
+      "spots_total": 20
     },
     {
-        "event": "Spring Beats Music Festival",
-        "date": "2023-4-28",
-        "location": "SFA Garden",
-        "organizing_club": "Music Club"
+      "event": "Career Talk: Life After Graduation",
+      "date": "Monday, May 5, 2025",
+      "time": "11:00",
+      "location": "Business Auditorium",
+      "category": "Career Development",
+      "spots_filled": 25,
+      "spots_total": 30
     },
     {
-        "event": "AI and Machine Learning Symposium",
-        "date": "2023-5-15",
-        "location": "Nicol 405",
-        "organizing_club": "Computer Science Club"
+      "event": "AI and Ethics Panel Discussion",
+      "date": "Friday, May 16, 2025",
+      "time": "16:00",
+      "location": "Main Campus Hall",
+      "category": "Artificial Intelligence",
+      "spots_filled": 18,
+      "spots_total": 25
     },
     {
-        "event": "Annual Sports Day",
-        "date": "2023-5-20",
-        "location": "Gymnasium",
-        "organizing_club": "Sports Club"
+      "event": "Photography Basics Workshop",
+      "date": "Saturday, June 1, 2025",
+      "time": "10:00",
+      "location": "Art Studio - Room 5",
+      "category": "Arts & Media",
+      "spots_filled": 10,
+      "spots_total": 15
     },
     {
-        "event": "Art and Culture Fest",
-        "date": "2023-6-10",
-        "location": "SFA Auditorium",
-        "organizing_club": "Art Club"
+      "event": "Hackathon 2025",
+      "date": "Friday, May 23, 2025",
+      "time": "09:00",
+      "location": "Innovation Hub",
+      "category": "Tech & Innovation",
+      "spots_filled": 40,
+      "spots_total": 50
     },
     {
-        "event": "Tech Talk: Innovations in AI",
-        "date": "2023-6-15",
-        "location": "Nicol 405",
-        "organizing_club": "Computer Science Club"
+      "event": "Business Pitch Competition",
+      "date": "Thursday, May 29, 2025",
+      "time": "13:00",
+      "location": "Room B101",
+      "category": "Business",
+      "spots_filled": 16,
+      "spots_total": 20
     },
     {
-        "event": "Annual Alumni Meet",
-        "date": "2023-6-20",
-        "location": "SFA Garden",
-        "organizing_club": "Alumni Association"
+      "event": "Sustainable Cities Lecture",
+      "date": "Tuesday, June 3, 2025",
+      "time": "15:00",
+      "location": "Green Hall",
+      "category": "Sustainability",
+      "spots_filled": 8,
+      "spots_total": 25
     },
     {
-        "event": "Summer Coding Bootcamp",
-        "date": "2023-7-1",
-        "location": "AKSOB 903",
-        "organizing_club": "Computer Science Club"
+      "event": "Python for Data Analysis",
+      "date": "Monday, May 19, 2025",
+      "time": "10:00",
+      "location": "CompSci Lab 3",
+      "category": "Programming",
+      "spots_filled": 20,
+      "spots_total": 20
     },
     {
-        "event": "Photography Workshop",
-        "date": "2023-7-10",
-        "location": "SFA Garden",
-        "organizing_club": "Photography Club"
-    },
-    {
-        "event": "Annual Science Fair",
-        "date": "2023-7-15",
-        "location": "SFA Auditorium",
-        "organizing_club": "Science Club"
-    
-    },
-    {
-        "event": "Summer Music Jam",
-        "date": "2023-7-20",
-        "location": "SFA Garden",
-        "organizing_club": "Music Club"
-    },
-    {
-        "event": "Hackathon: Code for Good",
-        "date": "2023-8-5",
-        "location": "AKSOB 903",
-        "organizing_club": "Computer Science Club"
-    },
-    {
-        "event": "Annual Debate Competition",
-        "date": "2023-8-10",
-        "location": "Nicol 405",
-        "organizing_club": "Debate Club"
-    },
-    {
-        "event": "Cultural Exchange Program",
-        "date": "2023-8-15",
-        "location": "SFA Auditorium",
-        "organizing_club": "Cultural Club"
-    },
-    {
-        "event": "Fall Fest",
-        "date": "2023-9-1",
-        "location": "SFA Garden",
-        "organizing_club": "Student Council"
-    },
-    {
-        "event": "Tech Expo 2023",
-        "date": "2023-9-10",
-        "location": "Nicol 405",
-        "organizing_club": "Computer Science Club"
+      "event": "Music Jam Session",
+      "date": "Friday, June 7, 2025",
+      "time": "17:30",
+      "location": "Music Room A",
+      "category": "Performing Arts",
+      "spots_filled": 7,
+      "spots_total": 15
     }
-]
+  ]

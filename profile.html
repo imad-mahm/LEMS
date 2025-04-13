@@ -8,17 +8,18 @@
   </head>
   <body>
     <header class="navbar">
-      <div class="logo">
+      <a class="logo" href="home.html" style="text-decoration: none">
         <img src="logo.png" alt="LEMS Logo" />
         <span>LEMS</span>
-      </div>
+      </a>
       <nav class="nav-links">
         <a href="browse.html">Browse Events</a>
-        <a href="#">Recommended</a>
+        <a href="Recommended.html">Recommended</a>
+
         <div class="profile-dropdown">
           <img
             src="https://img.icons8.com/ios-filled/24/ffffff/user.png"
-            alt="User"
+            alt="User Icon"
             class="profile-icon"
             onclick="toggleDropdown()"
           />
@@ -36,7 +37,6 @@
         </div>
       </nav>
     </header>
-
     <main class="container">
       <h1>Your Profile</h1>
       <p>Manage your account and preferences</p>
@@ -61,7 +61,13 @@
 
               <div class="form-actions">
                 <a href="manage.html" class="btn-outline">Manage Events</a>
-                <button class="btn-danger">Sign Out</button>
+                <button
+                  class="btn-danger"
+                  type="button"
+                  onclick="window.location.href = 'index.html'"
+                >
+                  Sign Out
+                </button>
               </div>
             </form>
           </div>
@@ -71,11 +77,17 @@
             <p>
               Upload and manage your transcript for personalized recommendations
             </p>
-            <label>Upload Your Transcript</label>
-            <textarea
-              rows="6"
-              placeholder='{ "courses": [{ "code": "CS101", "name": "Introduction to Computer Science", "grade": "A" }] }'
-            ></textarea>
+            <div class="custom-file">
+              <label for="transcript" class="file-box">
+                <img
+                  src="https://img.icons8.com/ios-filled/24/065f46/file--v1.png"
+                  alt="File Icon"
+                  class="file-icon"
+                />
+                <span id="file-label">Choose a PDF file</span>
+              </label>
+              <input type="file" id="transcript" accept=".pdf" />
+            </div>
 
             <div class="form-actions">
               <button class="btn-success">Upload Transcript</button>
@@ -107,7 +119,7 @@
     </main>
 
     <footer class="footer">
-      <p>© 2025 LEMS. All rights reserved.</p>
+      <p>Â© 2025 LEMS. All rights reserved.</p>
     </footer>
 
     <script>
@@ -124,6 +136,18 @@
           }
         }
       };
+    </script>
+    <script>
+      const transcriptInput = document.getElementById("transcript");
+      const fileLabel = document.getElementById("file-label");
+
+      transcriptInput.addEventListener("change", () => {
+        if (transcriptInput.files.length > 0) {
+          fileLabel.textContent = transcriptInput.files[0].name;
+        } else {
+          fileLabel.textContent = "Choose a PDF file";
+        }
+      });
     </script>
   </body>
 </html>
