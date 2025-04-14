@@ -25,6 +25,9 @@
             const percentFilled = Math.min((filled / total) * 100, 100);
 
             eventCard.innerHTML = `
+      <div class="event-card" onclick="window.location.href='event.html?event=${
+        event.event
+      }'">
         <div class="event-image">
           <span class="category-tag">${event.tags || "General"}</span>
           <img src="${image}" alt="${event.event} image" />
@@ -52,6 +55,7 @@
 
           <button class="btn-reserve">Reserve In Person</button>
         </div>
+      </div>
       `;
 
             eventList.appendChild(eventCard);
