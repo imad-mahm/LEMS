@@ -26,32 +26,31 @@
             const percentFilled = Math.min((filled / total) * 100, 100);
 
             eventCard.innerHTML = `
-        <div class="event-image">
-          <span class="category-tag">${event.tags || "General"}</span>
-          <img src="${image}" alt="${event.event} image" />
-        </div>
-
-        <div class="event-content">
-          <h3>${event.event}</h3>
-          <div class="event-detail">
-            <span class="icon">📅</span>
-            <span>${event.date}</span>
+        <div class="event-card">
+          <div class="event-image">
+            <span class="category-tag">${event.tags || "General"}</span>
+            <img src="${image}" alt="${event.event} image" />
           </div>
-          <div class="event-detail">
-            <span class="icon">⏰</span>
-            <span>${event.time || "TBA"}</span>
+          <div class="event-content">
+            <h3>${event.event}</h3>
+            <div class="event-detail">
+              <span class="icon">📅</span>
+              <span>${event.date}</span>
+            </div>
+            <div class="event-detail">
+              <span class="icon">⏰</span>
+              <span>${event.time || "TBA"}</span>
+            </div>
+            <div class="event-detail">
+              <span class="icon">📍</span>
+              <span>${event.location}</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: ${percentFilled}%;"></div>
+            </div>
+            <p class="spots-filled">${filled} / ${total} spots filled</p>
+            <button class="btn-reserve">Reserve In Person</button>
           </div>
-          <div class="event-detail">
-            <span class="icon">📍</span>
-            <span>${event.location}</span>
-          </div>
-
-          <div class="progress-bar">
-            <div class="progress" style="width: ${percentFilled}%;"></div>
-          </div>
-          <p class="spots-filled">${filled} / ${total} spots filled</p>
-
-          <button class="btn-reserve">Reserve In Person</button>
         </div>
       `;
 
