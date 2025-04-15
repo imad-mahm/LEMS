@@ -27,37 +27,33 @@
             eventCard.innerHTML = `
       <div class="event-card" onclick="window.location.href='event.html?event=${
         event.event
-      }'">
-        <div class="event-image">
-          <span class="category-tag">${event.tags || "General"}</span>
-          <img src="${image}" alt="${event.event} image" />
+      }&image=${image}'">
+          <div class="event-image">
+            <span class="category-tag">${event.tags || "General"}</span>
+            <img src="${image}" alt="${event.event} image" />
+          </div>
+          <div class="event-content">
+            <h3>${event.event}</h3>
+            <div class="event-detail">
+              <span class="icon">📅</span>
+              <span>${event.date}</span>
+            </div>
+            <div class="event-detail">
+              <span class="icon">⏰</span>
+              <span>${event.time || "TBA"}</span>
+            </div>
+            <div class="event-detail">
+              <span class="icon">📍</span>
+              <span>${event.location}</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: ${percentFilled}%;"></div>
+            </div>
+            <p class="spots-filled">${filled} / ${total} spots filled</p>
+            <button class="btn-reserve">Reserve In Person</button>
+          </div>
         </div>
-
-        <div class="event-content">
-          <h3>${event.event}</h3>
-          <div class="event-detail">
-            <span class="icon">📅</span>
-            <span>${event.date}</span>
-          </div>
-          <div class="event-detail">
-            <span class="icon">⏰</span>
-            <span>${event.time || "TBA"}</span>
-          </div>
-          <div class="event-detail">
-            <span class="icon">📍</span>
-            <span>${event.location}</span>
-          </div>
-
-          <div class="progress-bar">
-            <div class="progress" style="width: ${percentFilled}%;"></div>
-          </div>
-          <p class="spots-filled">${filled} / ${total} spots filled</p>
-
-          <button class="btn-reserve">Reserve In Person</button>
-        </div>
-      </div>
       `;
-
             eventList.appendChild(eventCard);
           });
 
@@ -160,8 +156,6 @@
           alert("Please upload a transcript PDF first.");
         }
       }
-    </script>
-    <script>
       const transcriptInput = document.getElementById("transcript");
       const fileLabel = document.getElementById("file-label");
 
