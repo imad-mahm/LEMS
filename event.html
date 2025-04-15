@@ -9,11 +9,15 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const eventName = urlParams.get("event");
+      const image = urlParams.get("image");
+
       fetch("events.json")
         .then((response) => response.json())
         .then((events) => {
           const event = events.find((e) => e.event === eventName);
           if (event) {
+            document.querySelector(".event-image").src = image;
+            document.querySelector(".event-image").alt = `${event.event} image`;
             document.querySelector(".event-title").textContent = event.event;
             document.querySelector(".event-date").textContent = event.date;
             document.querySelector(".event-time").textContent =
@@ -71,6 +75,7 @@
     </header>
 
     <main class="container">
+      <img src="" alt="" class="event-image" />
       <h1 class="event-title"></h1>
       <p class="event-date"></p>
       <p class="event-time"></p>

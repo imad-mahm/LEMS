@@ -287,6 +287,12 @@ h2 {
 .btn-reserve:hover {
   background-color: #047857;
 }
+
+.btn-reserve:active {
+  background-color: hsl(163, 88%, 20%);
+  transform: scale(0.98);
+}
+
 .event-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
